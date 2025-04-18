@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.meta-header {
+  background: linear-gradient(to right, #3b49df, #e91e63);
+  color: white;
+  position: relative;
+  height: 56px;
+}
+
+.meta-logo {
+  height: 36px;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: white;
+}
+.meta-header a {
+  text-decoration: none; /* Bỏ gạch chân */
+  font-weight: 700; /* Độ đậm */
+  transition: 0.3s;
+  color: white; /* Màu chữ */
+}
+
+/* Menu Overlay (mobile only) */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%; /* không che toàn màn hình */
+  max-width: 320px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-overlay.active {
+  transform: translateX(0);
+}
+
+.menu-content {
+  padding: 20px;
+}
+
+.close-btn {
+  font-size: 36px;
+  background: none;
+  border: none;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.menu-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #666;
+  font-size: 18px;
+  display: block;
+}
+
+/* Hover effect for desktop */
+@media (min-width: 992px) {
+  .meta-header nav a:hover {
+    color: #333;
+  }
+}
+
+/* tiếp theo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-banner {
+  background: linear-gradient(to right, #3b49df, #e91e63);
+}
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, #e91e63 100%);
+  animation: gradientMove 10s ease infinite;
+
+  display: flex;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-banner .text-section {
+  width: 50%;
+  height: 100%;
+}
+
+.section-banner .image-section {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  width: 600px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  /* CSS áp dụng cho điện thoại */
+  .section-banner .image-section {
+    position: absolute;
+    right: 3%;
+    top: 80%;
+    width: 320px;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 20px;
+}
+
+/* messsss */
+
+.section-2 {
+  margin-top: 200px;
+
+  background-color: #f8f9fa; /* Light background like trong ảnh */
+}
+
+.image-container {
+  width: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image-container img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-2 .text-section {
+  background-color: white;
+}
+
+/* secton3 */
+.section-3 {
+  margin-top: 50px;
+  background-color: #f8f9fa; /* Light background like trong ảnh */
+}
+.section-3 h2 {
+  font-size: 2rem;
+}
+.section-3 .tech-item img {
+  border-radius: 15px;
+}
+
+/* section 4 */
+
+.section-jobs .list-unstyled li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.job-item:hover {
+  border-left: 5px solid #0d6efd;
+  transition: 0.3s ease;
+}
+
+/* section 6 */
+
+.section-6 .list-unstyled li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(to bottom, #3b49df, #e91e63);
+  color: white;
+  padding: 20px 0;
+}
+footer a {
+  display: inline-block;
+  padding: 10px;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+  width: 150px;
+  color: white;
+}
+
+footer .social-footer a {
+  font-size: 24px;
+  margin-right: 20px;
+  color: white;
+  transition: 0.3s;
+  width: 30px !important;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
