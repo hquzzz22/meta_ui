@@ -6,8 +6,19 @@ a {
   text-decoration: none;
 }
 
+.btn-outline {
+  color: #0d6efd; /* Chữ màu xanh dương Bootstrap */
+  border: 1px solid #0d6efd; /* Viền cùng màu chữ */
+  background-color: transparent; /* Nền trong suốt */
+  border-radius: 20px;
+}
+
+.btn-outline:hover {
+  color: #fff; /* Chữ trắng khi hover */
+  background-color: #0d6efd; /* Nền xanh dương khi hover */
+  border-color: #0d6efd; /* Viền không đổi */
+}
 .meta-header {
-  background: linear-gradient(to right, #3b49df, #e91e63);
   color: white;
   position: relative;
   height: 56px;
@@ -22,6 +33,7 @@ a {
   color: white;
 }
 .meta-header a {
+  font-size: 13px;
   text-decoration: none; /* Bỏ gạch chân */
   font-weight: 700; /* Độ đậm */
   transition: 0.3s;
@@ -93,14 +105,19 @@ a {
   box-sizing: border-box;
 }
 
-.section-banner {
-  background: linear-gradient(to right, #3b49df, #e91e63);
+.main-body {
+  background: linear-gradient(
+    135deg,
+    rgba(84, 100, 255, 1) 0%,
+    rgba(255, 97, 112, 1) 100%
+  );
 }
+
 .main-container {
   position: relative;
   width: 100%;
-  height: 500px;
-  background: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, #e91e63 100%);
+  height: 350px;
+
   animation: gradientMove 10s ease infinite;
 
   display: flex;
@@ -141,6 +158,24 @@ a {
     width: 320px;
     object-fit: cover;
     z-index: 1;
+  }
+
+  .mobile-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .btn-outline {
+    color: #444; /* Chữ màu xanh dương Bootstrap */
+    border: 1px solid #555; /* Viền cùng màu chữ */
+    background-color: transparent; /* Nền trong suốt */
+  }
+
+  .social-mobile a {
+    height: 150px !important;
   }
 }
 
