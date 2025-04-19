@@ -6,6 +6,11 @@ a {
   text-decoration: none;
 }
 
+.my-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+}
 .btn-outline {
   color: #0d6efd; /* Chữ màu xanh dương Bootstrap */
   border: 1px solid #0d6efd; /* Viền cùng màu chữ */
@@ -154,8 +159,8 @@ a {
 
 .section-banner .image-section {
   position: absolute;
-  right: 20%;
-  top: 50%;
+  right: 15%;
+  top: 20%;
   width: 600px;
   object-fit: cover;
   z-index: 1;
@@ -163,6 +168,11 @@ a {
 
 @media (max-width: 767.98px) {
   /* CSS áp dụng cho điện thoại */
+
+  .my-container {
+    max-width: 100% !important;
+    padding: 0 0 !important;
+  }
   .section-banner .image-section {
     position: absolute;
     right: 3%;
@@ -170,6 +180,13 @@ a {
     width: 320px;
     object-fit: cover;
     z-index: 1;
+  }
+  .section-banner .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
   }
 
   .mobile-display {
@@ -192,7 +209,7 @@ a {
 }
 
 .image-section img {
-  width: 100%;
+  width: 125%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
@@ -227,8 +244,15 @@ a {
   margin-top: 50px;
   background-color: #f8f9fa; /* Light background like trong ảnh */
 }
+.section-3 .social-content {
+  width: 350px;
+}
 .section-3 h2 {
   font-size: 2rem;
+}
+.section-3 h5 {
+  font-size: 1.2rem;
+  color: #333;
 }
 .section-3 .tech-item img {
   border-radius: 15px;
@@ -241,6 +265,28 @@ a {
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
+}
+h3.text-heading a {
+  color: #1c2b33;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.96px;
+  line-height: 34px;
+}
+.section-jobs a .text-heading {
+  color: #1c2b33;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  line-height: 34px;
+}
+
+.section-jobs .list-unstyled li a {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1.44px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .job-item:hover {

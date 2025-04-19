@@ -24,7 +24,7 @@
         class="meta-header fixed-header fixed-top w-100 d-flex align-items-center justify-content-between px-3 py-2 "
       >
         
-         <div class="header-inner position-relative w-100 ">
+         <div class="header-inner my-container  container-md position-relative w-100 ">
             <!-- Menu icon (left on mobile) -->
             <button class="menu-toggle btn p-0 border-0 d-lg-none">
               <span class="menu-icon">&#9776;</span>
@@ -66,17 +66,17 @@
       </header>
       <!-- banner -->
       <section class="section-banner">
-        <div class="main-container">
+        <div class="container-xl main-container">
           <!-- Text Section -->
           <div
-            class="text-section d-flex flex-column justify-content-center text-white p-5"
+            class="text-section d-flex flex-column justify-content-center text-white"
           >
             <h6>Areas of work</h6>
             <h1 class="display-4 fw-bold text-white">Messenger</h1>
             
             
            
-            <a href="#" class="text-white  mt-3" style="font-weight: 600;font-size: 13px;"
+            <a href="#" class="text-white  mt-3" style="font-weight: 600;font-size: 13px; display: inline-block;width: 200px;"
               > <i style="display:inline-block;width: 20px;" class="fa-solid fa-chevron-right"></i>View All Open Positions</a
             >
           </div>
@@ -149,12 +149,13 @@
                   class="me-3"
                   width="100"
                 />
-                <div>
+                <div class="social-content">
                   <h5 class="mb-1 fw-semibold">Facebook</h5>
                   <p class="mb-0 text-muted">
                     Bringing you closer to the people and things you love
                   </p>
                 </div>
+                <i style="color: #666; font-size: 35px;" class="bi bi-arrow-right-circle"></i>
               </a>
 
               <a href="#" style="display: block;"
@@ -166,12 +167,14 @@
                 class="me-3"
                 width="100"
               />
-              <div>
+              <div class="social-content" >
                 <h5 class="mb-1 fw-semibold">Instagram</h5>
                 <p class="mb-0 text-muted">
                   Bringing you closer to the people and things you love
                 </p>
               </div>
+              
+              <i style="color: #666; font-size: 35px;" class="bi bi-arrow-right-circle"></i>
             </a>
 
             <a href="#"
@@ -184,12 +187,14 @@
                 class="me-3"
                 width="100"
               />
-              <div>
+              <div class="social-content">
                 <h5 class="mb-1 fw-semibold">Meta AI</h5>
                 <p class="mb-0 text-muted">
                   Explore the world around you and bring your visions to life
                 </p>
               </div>
+              <i style="color: #666; font-size: 35px;" class="bi bi-arrow-up-right-circle"></i>
+
             </a>
             </div>
 
@@ -215,8 +220,10 @@
             </div>
 
             <div class="d-flex justify-content-between align-items-center mb-3">
-              <h6 class="fw-bold"><a href="">Filter</a></h6>
-              <p class="text-primary small"><a href="">Clear Filters</a></p>
+              <h3 class="text-heading"><a href="">Filter</a></h3>
+              <p class="text-primary small mb-2"><a class="text-secondary
+
+                " href="">Clear Filters</a></p>
             </div>
 
             <ul class="list-unstyled">
@@ -228,14 +235,40 @@
 
           <!-- Job Listings -->
           <div class="col-12 p-5 col-md-9">
-            <h6 class="">Viewing 2 Jobs Related To:</h6>
+            <h4 class="">Viewing 7 Jobs Related To:</h4>
             <h5 class="fw-bold text-muted mb-4">MESSENGER</h5>
+             <!-- Công việc 1 -->
+             <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
+              <h3 class="text-heading mb-2">
+                Paid Social Media Expert
+              </h3>
+              <div class="row text-muted small">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                  <i class="bi bi-globe"></i> Global
+                </div>
+                <div class="col-6 col-md-4">Marketing & Advertising</div>
+                <div class="col-6 col-md-4">Social Media</div>
+              </div>
+            </a>
+             <!-- Công việc 1 -->
+             <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
+              <h3 class="text-heading mb-2">
+                Digital Marketing and Communications Specialist
+              </h3>
+              <div class="row text-muted small">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                  <i class="bi bi-globe"></i> Global
+                </div>
+                <div class="col-6 col-md-4">Marketing & Advertising</div>
+                <div class="col-6 col-md-4">Social Media</div>
+              </div>
+            </a>
 
             <!-- Công việc 1 -->
             <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
-              <h6 class="text-primary fw-bold mb-2">
+              <h3 class="text-heading mb-2">
                 Public Policy Manager, Competition, IP and Media
-              </h6>
+              </h3>
               <div class="row text-muted small">
                 <div class="col-12 col-md-4 mb-2 mb-md-0">
                   <i class="bi bi-globe"></i> Global
@@ -247,9 +280,9 @@
 
             <!-- Công việc 2 -->
             <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
-              <h6 class="text-primary fw-bold mb-2">
+              <h3 class="text-heading mb-2">
                 Agency Solutions Manager
-              </h6>
+              </h3>
               <div class="row text-muted small">
                 <div class="col-12 col-md-4 mb-2 mb-md-0">
                   <i class="bi bi-globe"></i> Global
@@ -261,9 +294,9 @@
 
             <!-- Công việc 3 -->
             <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
-              <h6 class="text-primary fw-bold mb-2">
+              <h3 class="text-heading mb-2">
                 Creative Director
-              </h6>
+              </h3>
               <div class="row text-muted small">
                 <div class="col-12 col-md-4 mb-2 mb-md-0">
                   <i class="bi bi-globe"></i> Global
@@ -275,9 +308,9 @@
 
              <!-- Công việc 4 -->
              <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
-              <h6 class="text-primary fw-bold mb-2">
+              <h3 class="text-heading mb-2">
                 Policy Communications Manager, EMEA
-              </h6>
+              </h3>
               <div class="row text-muted small">
                 <div class="col-12 col-md-4 mb-2 mb-md-0">
                   <i class="bi bi-globe"></i> Global
@@ -289,9 +322,9 @@
 
              <!-- Công việc 5 -->
              <a href="#" style="display: block;" class="job-item p-3 mb-3 bg-white rounded shadow-sm">
-              <h6 class="text-primary fw-bold mb-2">
+              <h3 class="text-heading mb-2">
                 Business Communications Manager
-              </h6>
+              </h3>
               <div class="row text-muted small">
                 <div class="col-12 col-md-4 mb-2 mb-md-0">
                   <i class="bi bi-globe"></i> Global
