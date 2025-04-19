@@ -21,45 +21,47 @@
     <!-- Header -->
   <div class="main-body">
       <header
-        class="meta-header d-flex align-items-center justify-content-between px-3 py-2 position-relative"
+        class="meta-header fixed-header fixed-top w-100 d-flex align-items-center justify-content-between px-3 py-2 "
       >
         
-          <!-- Menu icon (left on mobile) -->
-          <button class="menu-toggle btn p-0 border-0 d-lg-none">
-            <span class="menu-icon">&#9776;</span>
-          </button>
-    
-          <!-- Logo center (only on mobile) -->
-         <a class="text-center position-absolute start-50 translate-middle-x" href="#">
-            <img
-            width="100px"
-            style="object-fit: cover;"
-            src="./assets/images/logometa.png"
-              alt="Meta Logo"
-              class="meta-logo mx-auto d-lg-none"
-            />
-         </a>
-    
-          <!-- Desktop menu -->
-          <nav class="d-none d-lg-block w-100">
-            <div class="d-flex align-items-center justify-content-between">
-             <a href="#">
-                <img
-                  src="./assets/images/logometa.png"
-                  alt="Meta Logo"
-                  class="meta-logo"
-                />
-             </a>
-              <ul class="d-flex gap-4 list-unstyled m-0 text-white fw-bold">
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Areas of Work</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Career Programs</a></li>
-                <li><a href="#">How We Work</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-          </nav>
+         <div class="header-inner position-relative w-100 ">
+            <!-- Menu icon (left on mobile) -->
+            <button class="menu-toggle btn p-0 border-0 d-lg-none">
+              <span class="menu-icon">&#9776;</span>
+            </button>
+      
+            <!-- Logo center (only on mobile) -->
+           <a class="text-center position-absolute start-50 translate-middle-x" href="#">
+              <img
+              width="100px"
+              style="object-fit: cover;"
+              src="./assets/images/logometa.png"
+                alt="Meta Logo"
+                class="meta-logo mx-auto d-lg-none"
+              />
+           </a>
+      
+            <!-- Desktop menu -->
+            <nav class="d-none d-lg-block w-100">
+              <div class="d-flex align-items-center justify-content-between">
+               <a href="#">
+                  <img
+                    src="./assets/images/logometa.png"
+                    alt="Meta Logo"
+                    class="meta-logo"
+                  />
+               </a>
+                <ul class="d-flex gap-4 list-unstyled m-0 text-white fw-bold">
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Areas of Work</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Career Programs</a></li>
+                  <li><a href="#">How We Work</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </nav>
+         </div>
         
       </header>
       <!-- banner -->
@@ -159,7 +161,7 @@
               class="tech-item d-flex align-items-center mb-4 p-3 rounded-3 shadow-sm bg-light"
             >
               <img
-                src="/assets/images/instagram.png"
+                src="./assets/images/instagram.png"
                 alt="Instagram"
                 class="me-3"
                 width="100"

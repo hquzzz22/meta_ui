@@ -19,3 +19,12 @@ document.addEventListener("click", (e) => {
     menuOverlay.classList.remove("active");
   }
 });
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".fixed-header");
+  if (window.scrollY > 10) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
